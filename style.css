@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.title {
+  padding: 10px 20px 0;
+}
+
+.subtitle {
+  padding-left: 20px;
+}
+
+.columns > .column > .columns {
+  display: flex;
+}
+
+.columns > .column > .columns > .column {
+  flex-basis: initial;
+}
+
+.columns > .column > .columns > .column:nth-child(2) {
+  width: 70%;
+}
+
+#review_content > .columns {
+  display: flex;
+}
+
+#review_content > .columns > .column {
+  flex-basis: initial;
+  min-width: 75px;
+}
+
+.modal.is-active {
+  padding: 15px 30px;
+}

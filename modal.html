@@ -1,0 +1,46 @@
+<div class="modal" id="modal-js-example">
+  <div class="modal-background"></div>
+
+  <div class="modal-card">
+    <header class="modal-card-head has-background-grey-lighter">
+      <p class="modal-card-title">Submit review</p>
+      <button class="delete is-large has-background-danger-dark" aria-label="close"></button>
+    </header>
+
+    <section class="modal-card-body">
+      <h4 class="is-4 mb-3">
+        <i class="fa fa-star fa-lg has-text-grey-lighter submit_star mr-1" id="submit_star_1" data-rating="1"></i>
+        <i class="fa fa-star fa-lg has-text-grey-lighter submit_star mr-1" id="submit_star_2" data-rating="2"></i>
+        <i class="fa fa-star fa-lg has-text-grey-lighter submit_star mr-1" id="submit_star_3" data-rating="3"></i>
+        <i class="fa fa-star fa-lg has-text-grey-lighter submit_star mr-1" id="submit_star_4" data-rating="4"></i>
+        <i class="fa fa-star fa-lg has-text-grey-lighter submit_star mr-1" id="submit_star_5" data-rating="5"></i>
+      </h4>
+
+      <div class="field">
+        <label class="label" for="user_name">Username</label>
+
+        <div class="control">
+          <input class="input" name="user_name" id="user_name" type="text" placeholder="Enter your name">
+        </div>
+
+        <p class="help" id="errorUser"></p>
+      </div>
+
+      <div class="field">
+        <label class="label" for="user_review">Message</label>
+
+        <div class="control">
+          <textarea class="textarea" name="user_review" id="user_review" placeholder="Type your review here"></textarea>
+        </div>
+
+        <p class="help" id="errorMsg"></p>
+      </div>
+    </section>
+
+    <footer class="modal-card-foot">
+      <div class="control is-justify-content-center">
+        <button class="button is-success" id="save_review">Submit</button>
+      </div>
+    </footer>
+  </div>
+</div>
